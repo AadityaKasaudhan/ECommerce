@@ -1,0 +1,37 @@
+@import url(https://fonts.googleapis.com/css?family=Calibri:400,300,700);
+body {
+    background-color: #eee;
+    font-family: 'Calibri', sans-serif !important
+}
+
+.mt-100 {
+    margin-top: 70px
+}
+
+.card {
+    margin-bottom: 30px;
+    border: 0px;
+    border-radius: 0.25rem;
+    box-shadow: 0px 1px 15px 1px rgba(69, 65, 78, 0.08)
+}
+
+.card .card-body {
+    padding: 1.88rem 1.81rem
+}
+
+.table thead th {
+    border-bottom: none;
+    border-top: none;
+    vertical-align: middle
+}
+
+.table th,
+.table td {
+    padding: 1rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6
+}
+
+.progress {
+    margin-top: 6px
+}

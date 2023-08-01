@@ -1,0 +1,119 @@
+ Server: localhost -  Database: ecommerceportal
+-- phpMyAdmin SQL Dump
+-- version 3.2.0.1
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Sep 02, 2022 at 02:38 PM
+-- Server version: 5.1.36
+-- PHP Version: 5.3.0
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `ecommerceportal`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contact`
+--
+
+CREATE TABLE IF NOT EXISTS `contact` (
+  `name` varchar(30) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `phone` varchar(100) NOT NULL,
+  `msg` varchar(200) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `contact`
+--
+
+INSERT INTO `contact` (`name`, `email`, `phone`, `msg`) VALUES
+('akash', 'adityakas1907@gmail.com', '9559812026', 'Hello'),
+('adarsh', 'adarshkas2000@gmail.com', '9026552208', 'Bye'),
+('nknfkn', 'adityakas1907@gmail.com', '9559812026', 'Hello'),
+('Aastha', 'asatha@gmail.com', '1234567899', 'Astha is a good girl'),
+('', '', '', ''),
+('', '', '', ''),
+('', '', '', ''),
+('', '', '', ''),
+('aman', 'acvsuh@gmail.com', '9451076323', 'im owner'),
+('akash', 'ertyunhiii@gmail.com', '987654321', 'asdfghjkl;');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `login`
+--
+
+CREATE TABLE IF NOT EXISTS `login` (
+  `userid` varchar(100) NOT NULL,
+  `passwd` varchar(80) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `login`
+--
+
+INSERT INTO `login` (`userid`, `passwd`) VALUES
+('aditya', '12345');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `regis`
+--
+
+CREATE TABLE IF NOT EXISTS `regis` (
+  `name` varchar(50) NOT NULL,
+  `fname` varchar(50) NOT NULL,
+  `gen` varchar(50) NOT NULL,
+  `quali` varchar(200) NOT NULL,
+  `mob` varchar(60) NOT NULL,
+  `address` varchar(80) NOT NULL,
+  `email` varchar(200) NOT NULL,
+  `passwd` varchar(200) NOT NULL,
+  `profile` varchar(400) NOT NULL,
+  `city` varchar(200) NOT NULL,
+  `regdate` varchar(200) NOT NULL,
+  PRIMARY KEY (`email`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `regis`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `review`
+--
+
+CREATE TABLE IF NOT EXISTS `review` (
+  `name` varchar(100) NOT NULL,
+  `mob` varchar(100) NOT NULL,
+  `star` varchar(100) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `review`
+--
+
+INSERT INTO `review` (`name`, `mob`, `star`) VALUES
+('Aaditya', '9559812026', ''),
+('aman', '54689379797', ''),
+('', '', ''),
+('akash', '1234567', ''),
+('akash', '1234567', ''),
+('Aaditya', '9559812026', '4'),
+('akash', '9559812026', '2'),
+('adarsh', '1234567', 'null'),
+('asdfgh', '1234567', 'null'),
+('adarsh', '54689379797', '3'),
+('akash', '7648468867', '4'),
+('Astha', '1234567899', '5');
+

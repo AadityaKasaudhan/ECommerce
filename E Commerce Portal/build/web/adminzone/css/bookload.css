@@ -1,0 +1,55 @@
+ #autocomplete {
+     width: 100%;
+     float: left;
+     position: relative;
+ }
+ 
+ #emaillist {
+     width: 100%;
+     position: relative;
+     border: 1px solid #4d6e87;
+     display: none;
+     background-color: black;
+ }
+ 
+ #emaillist ul {
+     list-style: none;
+     background: #fff;
+     margin: 0;
+     padding: 0;
+     text-align: left;
+ }
+ 
+ #emaillist ul li {
+     padding: 2px 10px;
+     cursor: pointer;
+ }
+ 
+ #emaillist ul li:hover {
+     background-color: #ecf0f1;
+ }
+ 
+ #booklist {
+     width: 100%;
+     position: relative;
+     border: 1px solid #4d6e87;
+     display: none;
+     background-color: black;
+ }
+ 
+ #booklist ul {
+     list-style: none;
+     background: #fff;
+     margin: 0;
+     padding: 0;
+     text-align: left;
+ }
+ 
+ #booklist ul li {
+     padding: 2px 10px;
+     cursor: pointer;
+ }
+ 
+ #booklist ul li:hover {
+     background-color: #ecf0f1;
+ }
